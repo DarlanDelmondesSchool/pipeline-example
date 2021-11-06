@@ -29,6 +29,11 @@ pipeline {
                 echo 'Reports..'
             }
         }
+        stage('Destroying HML') {
+            steps {
+                echo 'terraform destroy...'
+            }
+        }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
