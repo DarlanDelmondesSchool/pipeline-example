@@ -19,6 +19,11 @@ pipeline {
                 sh 'ls -la'
             }
         }
+        stage('Upload') {
+            steps {
+                echo 'Uploading..'
+            }
+        }
         stage('Reports') {
             steps {
                 echo 'Reports..'
